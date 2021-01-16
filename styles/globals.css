@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("/proxima-nova.woff") format("woff");
+	font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+	--oh-gold: #dcc377;
+	--oh-green: #525b31;
+	--oh-translucent-green: rgba(82, 91, 49, 0.7);
+	--oh-light-gray: #c8c9c2;
+	--oh-gray: #707070;
+	--oh-slate-gray: #1f1f1f;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-family: "Proxima Nova", sans-serif;
+	color: var(--oh-gold);
+}
+
+body {
+	background: var(--oh-green);
 }

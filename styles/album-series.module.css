@@ -1,0 +1,28 @@
+#album {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 'notos      eurus'
+						 'boreas  zephyrus';
+	position: relative;
+}
+
+#album > svg:first-child {
+    max-height: 90%;
+	max-width: 95%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	box-shadow: 2px 2px 15px black;
+	padding: 15px;
+}
+
+#album > svg:not(:first-child) {
+	height: 100%;
+    width: 100%;
+	fill: var(--oh-light-gray);
+}

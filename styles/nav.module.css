@@ -1,0 +1,20 @@
+#nav {
+	height: 10vh;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: min(6vh, 8vw);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--oh-translucent-green);
+    box-shadow: 0 10px 10px var(--oh-translucent-green);
+	pointer-events: none;
+}
+
+#nav > h1 {
+	text-shadow: 2px 2px 5px var(--oh-green);
+	pointer-events: all;
+	text-transform: uppercase;
+}
